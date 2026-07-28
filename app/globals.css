@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-softwhite text-ink dark:bg-charcoal dark:text-cream transition-colors duration-300;
+  font-family: var(--font-body);
+}
+
+::selection {
+  @apply bg-blush/60 text-ink;
+}
+
+/* Custom scrollbar, soft & unobtrusive */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-lavender/50 dark:bg-lavender-dark/40 rounded-full;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono-alt {
+  font-family: var(--font-mono);
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-white/60 dark:bg-charcoal-surface/60 border border-white/40 dark:border-charcoal-border/60;
+}
+
+.section-divider {
+  display: block;
+  width: 100%;
+  height: 48px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #d98fae, #a98be0, #7ba7db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .text-gradient {
+  background: linear-gradient(90deg, #e8a9c3, #b9a0e0, #a9b8e8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #b9a0e0;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
