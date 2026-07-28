@@ -1,76 +1,105 @@
-# Yashi Srivastava — Portfolio
+<div align="center">
 
-A personal portfolio site built with Next.js 15 (App Router), TypeScript, Tailwind CSS,
-and Framer Motion. Soft, elegant, feminine aesthetic — built to read as technically
-strong without looking like a generic dev template.
+# Personal Portfolio
 
-## Stack
+A modern portfolio documenting my journey through computer engineering, research, software engineering, and data science.
 
-- Next.js 15 (App Router) + TypeScript
-- Tailwind CSS (custom blush / lavender / periwinkle palette, warm charcoal dark mode)
-- Framer Motion for page and scroll animations
-- react-hook-form + zod for the contact form
-- next-themes for light/dark mode
-- lucide-react icons
+Built with **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-## Getting started
+**Live Website**  
+https://portfolio-six-iota-73.vercel.app/
+
+</div>
+
+---
+
+## About
+
+This repository contains the source code for my personal portfolio.
+
+It brings together my projects, research, professional experience, leadership, and technical interests in a single place. The website was designed with an emphasis on clean typography, responsive layouts, accessibility, and subtle interactions.
+
+---
+
+## Features
+
+- Responsive design
+- Dark and light themes
+- Smooth page transitions
+- Interactive project showcase
+- Research and experience timeline
+- Technology stack overview
+- Contact form powered by Resend
+- Optimised performance and accessibility
+
+---
+
+## Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Framework | Next.js |
+| Frontend | React, TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Deployment | Vercel |
+| Email | Resend |
+
+---
+
+## Running Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+```
+
+Install dependencies
 
 ```bash
 npm install
+```
+
+Create a `.env.local` file and add:
+
+```env
+RESEND_API_KEY=your_resend_api_key
+```
+
+Run the development server
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
-## Project structure
+Open your browser and visit:
 
 ```
-app/            → routes (one folder per page), layout.tsx, globals.css
-components/     → shared UI: Navbar, Footer, ProjectCard, ContactForm, etc.
-lib/            → data.ts (all resume content), utils.ts (cn helper)
-public/resume/  → the downloadable/embeddable resume PDF
+http://localhost:3000
 ```
 
-All resume content (experience, projects, skills, achievements) lives in
-`lib/data.ts`. Update that file to change the site's content — no need to touch
-components.
+---
 
-## Contact form setup
+## Project Structure
 
-The form posts to `app/api/contact/route.ts`, which uses [Resend](https://resend.com)
-if configured:
+```text
+app/
+components/
+data/
+lib/
+public/
+styles/
+```
 
-1. Create a Resend account and API key.
-2. Copy `.env.example` to `.env.local` and fill in:
-   ```
-   RESEND_API_KEY=your_key_here
-   CONTACT_TO_EMAIL=you@example.com
-   ```
-3. Without these set, submissions are logged server-side instead of emailed,
-   so the form still works end-to-end during development.
+---
 
-Prefer EmailJS instead? Swap the `fetch("/api/contact")` call in
-`components/ContactForm.tsx` for the `@emailjs/browser` SDK using your
-service/template/public key from `.env.example`.
+## Live Website
 
-The form includes a hidden honeypot field (`company`) for basic spam protection.
+https://portfolio-six-iota-73.vercel.app/
 
-## Theming
+---
 
-Colors and fonts are defined as design tokens in `tailwind.config.ts`
-(blush, lavender, lilac, periwinkle, baby blue, warm grey + warm-charcoal dark mode).
-Fonts: Plus Jakarta Sans (display), Inter (body), Space Grotesk (mono/data),
-loaded via `next/font/google` in `app/layout.tsx`.
+## Licence
 
-## Deployment (Vercel)
-
-1. Push this repo to GitHub.
-2. Import it at [vercel.com/new](https://vercel.com/new).
-3. Add the environment variables from `.env.example` in the Vercel project settings.
-4. Deploy — no additional configuration needed.
-
-## Easter eggs
-
-- Sparkle animation on the nav logo (hover it).
-- A friendly message in the browser console.
-- The Konami code (↑ ↑ ↓ ↓ ← → ← → B A) triggers a little celebration.
+This project is licensed under the MIT Licence.
