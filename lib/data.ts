@@ -5,9 +5,9 @@ export const profile = {
   altEmail: "23ucc620@lnmiit.ac.in",
   phone: "+91-88406-57829",
   links: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    leetcode: "https://leetcode.com",
+    github: "https://github.com/yashi-2004",
+    linkedin: "https://www.linkedin.com/in/yashi-srivastava-596021281/",
+    leetcode: "https://leetcode.com/u/qoMuemwQpw/",
   },
   location: "Jaipur, India",
   rotatingRoles: [
