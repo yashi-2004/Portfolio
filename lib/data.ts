@@ -1,6 +1,6 @@
 export const profile = {
   name: "Yashi Srivastava",
-  tagline: "Always learning.",
+  tagline: "Backend Developer | Python, Cloud & Applied AI",
   email: "yashisrivastava2510@gmail.com",
   altEmail: "23ucc620@lnmiit.ac.in",
   phone: "+91-88406-57829",
@@ -11,26 +11,26 @@ export const profile = {
   },
   location: "Jaipur, India",
   rotatingRoles: [
-  "coffee's ready...",
-  "editor's open...",
-  "the bug appeared...",
-  "the bug disappeared...",
-  "nobody knows why.",
-  "calling it progress...",
-],
-  bio: `I am a Computer Engineering undergraduate at LNMIIT, Jaipur, specialising in Artificial Intelligence and Data Science. My academic interests lie in intelligent systems, machine learning, and software engineering, particularly where rigorous research informs practical implementation. Through projects in healthcare, computer vision, and privacy-preserving learning, I have developed a lasting interest in building systems that are not only effective, but dependable.`,
+    "coffee's ready...",
+    "editor's open...",
+    "the bug appeared...",
+    "the bug disappeared...",
+    "nobody knows why.",
+    "calling it progress...",
+  ],
+  bio: `Backend Software Engineer and Computer Engineering undergraduate at LNMIIT Jaipur, experienced in building scalable REST APIs and Agentic AI workflows using Python, FastAPI, and LangGraph. Strong background in relational/vector database design, query optimization, and containerized deployments across AWS and Kubernetes.`,
   currentlyLearning: [
     "Agentic AI Workflows",
-    "LLM Application Development",
-    "Production AI Systems",
+    "LangGraph & Vector Search",
+    "Kubernetes & Cloud Infrastructure",
   ],
   researchInterests: [
-    "Trustworthy & privacy-preserving ML",
-    "AI for healthcare and biosignals",
-    "Program analysis meets machine learning",
+    "Agentic AI & Multi-Agent Orchestration",
+    "Vector Search & Retrieval-Augmented Generation (RAG)",
+    "Privacy-Preserving Distributed Machine Learning (FedAvg)",
   ],
   goals:
-    "To build AI systems that are dependable, thoughtfully engineered, and grounded in research. I hope to contribute to work that advances both the science and the practical use of artificial intelligence.",
+    "To build scalable, dependable backend architectures and Agentic AI systems that solve real-world problems through clean code, robust database engineering, and high-performance cloud infrastructure.",
   outsideInterests: [
     "Writing, editing, and telling stories",
     "Typography, design, and visual aesthetics",
@@ -39,61 +39,85 @@ export const profile = {
 };
 
 export const education = {
-  institution: "LNM Institute of Information Technology (LNMIIT), Jaipur",
-  degree: "B.Tech, Communication & Computer Engineering",
-  specialisation: "Specialisation: AI & Data Science",
+  institution: "The LNM Institute of Information Technology, Jaipur",
+  degree: "B.Tech in Communication & Computer Engineering",
+  specialisation: "",
   duration: "2023 – 2027",
   coursework: [
     "Data Structures & Algorithms",
-    "Object-Oriented Programming",
-    "Database Management Systems",
+    "Database Management Systems (DBMS)",
     "Operating Systems",
     "Computer Networks",
-    "AI & Machine Learning",
     "Software Engineering",
+    "Object-Oriented Programming (OOP)",
+    "Distributed Systems",
+    "Cloud Computing",
   ],
 };
+
 
 export const experience = [
   {
     role: "Data Science Intern",
-    org: "DoIT&C, Government of Rajasthan",
-    supervisor: "via Trigyn Technologies",
-    duration: "June 2026 – Present",
+    org: "Trigyn Technologies Ltd. — DOITC, Government of Rajasthan",
+    supervisor: "Jaipur, Rajasthan",
+    duration: "Jun – Aug 2026",
     hasCertificate: false,
     points: [
-      "Working on data analytics and business intelligence solutions using Tableau to support public sector decision-making.",
-      "Building interactive dashboards to translate complex operational data into clear, actionable visual insights.",
-      "Analysing large-scale public sector datasets to extract trends and support operational efficiency.",
+      "Built automated data ingestion and validation pipelines in Python to process and normalize 100K+ monthly public service records.",
+      "Architected a high-performance star-schema relational model in MySQL, optimizing analytical query execution times by 40% for executive reporting.",
+      "Developed ETL workflows converting unstructured Excel datasets into structured relational tables, cutting manual preprocessing time by 35%.",
+      "Collaborated in an Agile/Scrum cadence to deliver 5+ automated Tableau dashboards, ensuring data accuracy and automated metric tracking across departments.",
     ],
   },
   {
-    role: "Research Intern | Deep Learning",
-    org: "NIT Allahabad",
-    supervisor: "Supervisor: Dr. Joohi Chauhan",
-    duration: "June 2025 – July 2025",
+    role: "Research Intern (Deep Learning)",
+    org: "MNNIT Allahabad",
+    supervisor: "Supervisor: Dr. Joohi Chauhan · Prayagraj, India",
+    duration: "Jun – Jul 2025",
     hasCertificate: true,
     points: [
-      "Trained ANN and CNN models in PyTorch on structured (NHANES) and image (CIFAR-10) datasets, reaching 86.5% accuracy and a 0.89 ROC-AUC on cardiac risk prediction, plus 74.2% accuracy on CIFAR-10 classification.",
-      "Applied regularisation (dropout), batch normalisation, and class-weighted loss to handle imbalanced data, benchmarking Adam, RMSProp, and SGD optimisers.",
-      "Investigated federated learning (FedAvg) for privacy-preserving distributed ML, analysing gradient aggregation algorithms and communication-efficiency tradeoffs.",
-      "Documented research findings on trustworthy machine learning, evaluating model performance to ensure both predictive robustness and fairness.",
+      "Engineered and benchmarked PyTorch neural network architectures across class-imbalanced healthcare datasets, achieving 86.5% accuracy and 0.89 ROC-AUC.",
+      "Implemented training pipelines with weighted cross-entropy loss and cosine LR scheduling across SGD, Adam, and RMSProp optimizers.",
+      "Optimized CNN inference pipelines over 60,000 images using data augmentation and batch normalization, reaching 74.2% test accuracy.",
+      "Explored Federated Learning (FedAvg) for privacy-preserving distributed model updates, analyzing communication and compute bottlenecks.",
     ],
   },
 ];
 
 export const projects = [
   {
-    slug: "barbell-classification",
-    title: "Barbell Exercise Classification & Rep Counter",
+    slug: "enterprise-multi-agent-knowledge-platform",
+    title: "Enterprise Multi-Agent Knowledge Platform",
     problem:
-      "Wearable IMU sensors generate noisy, high-dimensional time-series data that's hard to translate into a reliable exercise classifier or rep counter.",
+      "Enterprise knowledge bases struggle with disparate unstructured documentation and transactional records, requiring intelligent query routing and low-latency retrieval.",
     solution:
-      "Engineered temporal and frequency-domain features from 6-axis IMU data, applied PCA to retain 95% variance while cutting dimensionality, then compared Random Forest, SVM, and KNN classifiers with 5-fold grid search. Built an automated rep counter using peak detection.",
-    stack: ["Python", "Scikit-learn", "PCA", "Pandas"],
-    results: ["~12% accuracy improvement over baseline", "95% variance retained post-PCA", "5-fold cross-validated model selection"],
-    github: "https://github.com",
+      "Built an autonomous Agentic AI backend using FastAPI and LangGraph, orchestrating query routing between Qdrant vector search and an automated SQL retrieval agent. Implemented asynchronous request handling and modular provider adapters for hot-swappable LLMs without altering downstream API contracts.",
+    stack: ["FastAPI", "LangGraph", "PostgreSQL", "Qdrant", "Docker", "Kubernetes", "AWS"],
+    results: [
+      "Autonomous query routing between Qdrant vector search and SQL retrieval agent",
+      "Hot-swappable LLM and embedding adapters without altering downstream API contracts",
+      "Secured endpoints with JWT authentication, bcrypt hashing & strict SQL parameterization",
+      "Packaged backend into Docker containers with Kubernetes manifests & GitHub Actions CI/CD",
+    ],
+    github: "https://github.com/yashi-2004",
     demo: null,
+  },
+  {
+    slug: "responsive-developer-platform",
+    title: "Responsive Developer Platform & Web Services",
+    problem:
+      "Engineering portfolios and modern web platforms require high rendering performance, minimal client latency, and resilient transactional messaging without cumbersome backend overhead.",
+    solution:
+      "Developed a component-driven web platform with optimized routing, lazy loading, and dynamic chunk splitting for minimal client latency. Integrated transactional email microservices via Resend API with strict server-side schema validation.",
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Resend API", "Vercel"],
+    results: [
+      "Component-driven web platform with optimized routing, lazy loading, and dynamic chunk splitting",
+      "Integrated transactional email microservices via Resend API with server-side validation",
+      "Automated continuous deployment pipeline linking Git triggers directly to edge servers",
+    ],
+    github: "https://github.com/yashi-2004/Portfolio",
+    demo: "https://portfolio-six-iota-73.vercel.app/",
   },
   {
     slug: "symbolic-execution",
@@ -103,8 +127,24 @@ export const projects = [
     solution:
       "Built a symbolic execution pipeline on KLEE (LLVM-based) with the Z3 SMT solver to systematically explore program paths and auto-detect bug classes, then integrated an AI-based patch suggestion module.",
     stack: ["C/C++", "KLEE", "Z3", "LLVM", "Python"],
-    results: ["Significantly higher branch coverage than random test generation", "Automated detection across multiple bug classes", "AI-assisted patch suggestions"],
-    github: "https://github.com",
+    results: [
+      "Significantly higher branch coverage than random test generation",
+      "Automated detection across multiple bug classes",
+      "AI-assisted patch suggestions",
+    ],
+    github: "https://github.com/yashi-2004",
+    demo: null,
+  },
+  {
+    slug: "barbell-classification",
+    title: "Barbell Exercise Classification & Rep Counter",
+    problem:
+      "Wearable IMU sensors generate noisy, high-dimensional time-series data that's hard to translate into a reliable exercise classifier or rep counter.",
+    solution:
+      "Engineered temporal and frequency-domain features from 6-axis IMU data, applied PCA to retain 95% variance while cutting dimensionality, then compared Random Forest, SVM, and KNN classifiers with 5-fold grid search. Built an automated rep counter using peak detection.",
+    stack: ["Python", "Scikit-learn", "PCA", "Pandas"],
+    results: ["~12% accuracy improvement over baseline", "95% variance retained post-PCA", "5-fold cross-validated model selection"],
+    github: "https://github.com/yashi-2004",
     demo: null,
   },
   {
@@ -115,8 +155,8 @@ export const projects = [
     solution:
       "Built a multi-layer ANN in PyTorch on the NHANES dataset, handling class imbalance with weighted cross-entropy loss and evaluating across multiple clinical metrics.",
     stack: ["PyTorch", "Scikit-learn", "Pandas", "Matplotlib"],
-    results: ["86.5% accuracy", "85.0% precision", "72.3% recall", "0.89 AUC"],
-    github: "https://github.com",
+    results: ["86.5% accuracy", "85.0% precision", "72.3% recall", "0.89 ROC-AUC"],
+    github: "https://github.com/yashi-2004",
     demo: null,
   },
   {
@@ -127,23 +167,27 @@ export const projects = [
     solution:
       "Designed a CNN with Conv-Pool blocks, dropout, and batch normalisation, applying data augmentation and a cosine learning-rate schedule over 50 training epochs.",
     stack: ["PyTorch", "NumPy", "Matplotlib"],
-    results: ["74.2% test accuracy", "60,000-image dataset", "50 training epochs"],
-    github: "https://github.com",
+    results: ["74.2% test accuracy", "60,000-image dataset", "Cosine LR scheduling across SGD/Adam"],
+    github: "https://github.com/yashi-2004",
     demo: null,
   },
 ];
 
 export const skills = {
-  Languages: ["Python", "Java", "C", "JavaScript", "HTML", "CSS", "SQL", "PyTorch", "Keras"],
-  Tools: ["Git/GitHub", "KLEE", "Z3", "LLVM", "LaTeX"],
+  Languages: ["Python (Async/OOP)", "SQL", "C++", "Java", "JavaScript", "TypeScript"],
+  "Backend & APIs": ["FastAPI", "Node.js", "Express.js", "RESTful APIs", "Microservices Architecture", "JWT Auth"],
+  "AI & Agentic Systems": ["Agentic AI Workflows", "LangGraph", "RAG Pipelines", "Vector Search", "PyTorch", "Scikit-learn"],
+  "Databases & Storage": ["PostgreSQL", "MySQL", "Qdrant", "Supabase", "Redis", "Star-Schema Design", "Query Optimization"],
+  "Cloud & DevOps": ["AWS (EC2, S3)", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Vercel", "Render"],
+  "Tools & Methodologies": ["Clean Architecture", "Git", "Linux", "Tableau", "Unit Testing", "Agile/Scrum", "KLEE", "Z3"],
 };
 
 export const leadership = [
   {
-    title: "Chairperson, ACM Student Chapter, LNMIIT",
+    title: "Chairperson, ACM Student Chapter (LNMIIT)",
     duration: "Current",
     description:
-  "Guiding the chapter's technical vision through events, workshops, collaborations, and student-led initiatives.",
+      "Lead technical workshops, hackathons, and development tracks for 200+ members.",
   },
 ];
 
@@ -151,19 +195,19 @@ export const achievements = [
   {
     title: "Selected Participant, ACM-W India Grad Cohort 2025",
     org: "IIT Kanpur",
-    description: "Competitive program for undergraduate women in computing.",
+    description: "Selected among top nationwide undergraduate women in computing.",
     year: "2025",
   },
   {
-    title: "INSPIRE Scholarship",
+    title: "INSPIRE Scholarship, DST",
     org: "Govt. of India",
-    description: "Awarded to the top 1% of national 12th Board scorers for excellence in Science & Technology.",
+    description: "Awarded for ranking in top 1% in Class XII board examinations.",
     year: "",
   },
   {
-    title: "Qualified Stage 1, NTSE",
+    title: "Stage 1 Qualifier, NTSE",
     org: "National Talent Search Examination",
-    description: "Cleared the first stage of India's national talent search examination.",
+    description: "Cleared Stage 1 of the National Talent Search Examination.",
     year: "",
   },
 ];

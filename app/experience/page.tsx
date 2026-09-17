@@ -7,7 +7,7 @@ import { experience } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Experience — Yashi Srivastava",
-  description: "Research internship and hands-on deep learning experience.",
+  description: "Internships and research experience across backend systems, data pipelines, and applied AI.",
 };
 
 export default function ExperiencePage() {
@@ -16,7 +16,7 @@ export default function ExperiencePage() {
       <PageHero
         eyebrow="Where I've worked"
         title="Experience"
-        description="Working with data, one problem at a time."
+        description="Engineering scalable backend solutions, data pipelines, and intelligent systems."
       />
 
       <section className="mx-auto mt-14 max-w-2xl px-6">

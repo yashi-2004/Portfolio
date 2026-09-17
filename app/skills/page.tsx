@@ -152,6 +152,51 @@ function TechLogo({ name }: { name: string }) {
           <path fill="#F9AB00" d="M7 12c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5s-5-2.2-5-5zm5-7c-3.9 0-7 3.1-7 7s3.1 7 7 7s7-3.1 7-7s-3.1-7-7-7z"/>
         </svg>
       );
+    case "fastapi":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#05998B" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.745 19.5v-5.627H8.508L13.245 4.5v5.627h2.747L11.255 19.5z"/>
+        </svg>
+      );
+    case "docker":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#2496ED" d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186H8.1a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H5.136a.186.186 0 0 0-.186.185v1.888c0 .102.084.185.186.185m-2.928 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H2.208a.186.186 0 0 0-.186.185v1.888c0 .102.083.185.186.185M23.978 12.5c-.213-.39-.77-.492-1.304-.282-.098.04-.374.18-.744.197-.247-.41-.65-.733-1.127-.92-.587-.23-1.228-.21-1.782.053-.418.198-.755.518-.98.905-.72-.116-1.574-.108-2.52.02-.857.114-1.637.37-2.315.748l-.34-.41c-.482-.58-1.205-.91-1.968-.895H2.383c-.31 0-.56.25-.56.56v.054c0 1.258.468 2.457 1.317 3.38 1.488 1.62 3.664 2.535 6.04 2.535 5.56 0 10.354-3.328 11.758-8.21.67-.098 1.25-.37 1.69-.785.45-.425.68-.94.67-1.47"/>
+        </svg>
+      );
+    case "kubernetes":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#326CE5" d="M12 .002a2.02 2.02 0 0 0-.99.27L2.9 5.25a2.02 2.02 0 0 0-.99 1.75v9.98c0 .72.38 1.38.99 1.75l8.11 4.98a2.02 2.02 0 0 0 1.98 0l8.11-4.98c.61-.37.99-1.03.99-1.75V7c0-.72-.38-1.38-.99-1.75L12.99.272A2.02 2.02 0 0 0 12 .002zm-.01 2.37l7.25 4.45-2.73 4.2-4.52-2.78zm-1.07.03v5.84l-4.5 2.76-2.72-4.18zm8.33 5.11l2.74 4.19-4.5 2.77-2.76-4.18zm-14.5 0l4.52 2.78-2.76 4.18-4.5-2.77zm1.78 8.16l4.5-2.76v5.84l-7.25-4.45zm5.55-2.12l4.5 2.76-2.75 4.2-4.5-2.76zm4.5 2.76l4.5-2.76 2.75 1.37-7.25 4.45z"/>
+        </svg>
+      );
+    case "aws":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#FF9900" d="M18.79 17.5c-2.48 1.83-6.13 2.8-9.25 2.8-4.38 0-8.32-1.6-11.31-4.27-.24-.21-.03-.5.25-.34 3.23 1.87 7.18 3 11.23 3 2.77 0 5.82-.7 8.54-2.15.42-.23.79.25.54.96zm1.3-1.63c-.32-.41-2.09-.19-2.89-.1-.24.03-.28-.16-.06-.31 1.44-.99 3.8-.7 4.08-.36.27.34-.07 2.72-1.43 3.8-.21.17-.41.08-.31-.14.33-.76.93-2.48.61-2.89zM8.32 8.71c0-1.27-.72-2.13-2.02-2.13-1.28 0-2.08.82-2.26 2.13h4.28zm2.14 3.79h-2.1v-.8c-.62.64-1.48.97-2.43.97-1.89 0-3.34-1.32-3.34-3.51 0-2.27 1.57-3.56 3.65-3.56 1.05 0 1.62.25 2.12.65V6c0-1.41-.95-2.22-2.51-2.22-.98 0-1.94.36-2.58.91-.18.15-.35.15-.47-.04l-.62-.97c-.11-.18-.08-.34.1-.49.97-.8 2.33-1.3 3.86-1.3 2.88 0 4.39 1.48 4.39 4.19v6.42zm7.77-.07l-2.06-7.39c-.06-.21.05-.33.26-.33h2.32c.23 0 .37.13.43.34l1.19 5.09 1.15-5.09c.05-.21.2-.34.42-.34h2.24c.22 0 .32.12.26.33l-2.08 7.39c-.07.24-.2.36-.43.36h-1.32c-.22 0-.35-.12-.42-.36z"/>
+        </svg>
+      );
+    case "postgresql":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#336791" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.2 16.5c-1.3 0-2.3-.5-2.8-1.5l-.2-.4v1.7H8.5V9.7h1.7v1.7l.2-.4c.5-1 1.5-1.5 2.8-1.5 2.1 0 3.7 1.8 3.7 4.5s-1.6 4.5-3.7 4.5zm-.2-1.7c1.3 0 2.2-1.1 2.2-2.8s-.9-2.8-2.2-2.8-2.2 1.1-2.2 2.8.9 2.8 2.2 2.8z"/>
+        </svg>
+      );
+    case "qdrant":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <path fill="#DC2626" d="M12 2L2 8.5v7L12 22l10-6.5v-7L12 2zm0 3.2l6.5 4.2-6.5 4.3-6.5-4.3L12 5.2zm-7 5.1l6 4v5.6l-6-3.9v-5.7zm8 9.6v-5.6l6-4v5.7l-6 3.9z"/>
+        </svg>
+      );
+    case "langgraph":
+      return (
+        <svg viewBox="0 0 24 24" className={size}>
+          <circle cx="6" cy="6" r="3" fill="#1C3C3C"/>
+          <circle cx="18" cy="6" r="3" fill="#2E7D32"/>
+          <circle cx="12" cy="18" r="3" fill="#00897B"/>
+          <path d="M8.5 7.5l7 7M15.5 7.5l-7 7M8 6h8" stroke="#00897B" strokeWidth="1.5" fill="none"/>
+        </svg>
+      );
     case "latex":
       return <FileText className={`${size} text-lavender-dark`} strokeWidth={1.5} />;
     default:
@@ -161,30 +206,31 @@ function TechLogo({ name }: { name: string }) {
 
 export default function SkillsPage() {
   const coreStack = [
-    "Python", "C++", "JavaScript", "TypeScript", 
-    "React", "Next.js", "Tailwind CSS", "PyTorch", 
-    "Scikit-learn", "SQL", "Git", "GitHub"
+    "Python", "FastAPI", "PostgreSQL", "Docker", 
+    "Kubernetes", "AWS", "PyTorch", "TypeScript", 
+    "React", "Next.js", "Tailwind CSS", "SQL"
   ];
 
   const aiStack = [
-    { name: "PyTorch", desc: "Deep learning models, tensor computation, and research experimentation." },
-    { name: "TensorFlow", desc: "Building and deploying machine learning models across platforms." },
-    { name: "Scikit-learn", desc: "Classical machine learning algorithms, preprocessing, and model evaluation." },
-    { name: "Keras", desc: "High-level API for rapid deep learning prototyping and neural network modeling." },
-    { name: "NumPy", desc: "Scientific computing, multi-dimensional arrays, and mathematical operations." },
-    { name: "Pandas", desc: "Data manipulation, analysis, and cleaning of structured datasets." },
-    { name: "OpenCV", desc: "Real-time computer vision, image processing, and video analysis." },
-    { name: "Tableau", desc: "Business intelligence, interactive dashboard creation, and data visualization." },
+    { name: "FastAPI", desc: "High-performance asynchronous backend services, RESTful APIs, and strict data validation." },
+    { name: "LangGraph", desc: "Agentic AI workflows, multi-agent state machines, and autonomous query routing." },
+    { name: "Qdrant", desc: "Vector similarity search, high-dimensional embeddings storage, and hybrid RAG pipelines." },
+    { name: "PostgreSQL", desc: "Relational database design, query optimization, connection pooling, and ACID guarantees." },
+    { name: "Docker", desc: "Containerized application packaging, multi-stage builds, and repeatable microservice environments." },
+    { name: "Kubernetes", desc: "Container orchestration, deployment manifests, service routing, and automated scaling." },
+    { name: "PyTorch", desc: "Neural network architectures, custom loss functions, and deep learning research experimentation." },
+    { name: "Tableau", desc: "Analytical dashboard design, metric tracking, and public-sector data visualization." },
   ];
 
-  const toolkit = ["Git", "GitHub", "Linux", "VS Code", "Jupyter Notebook", "Google Colab", "LaTeX"];
+  const toolkit = ["Docker", "Kubernetes", "AWS", "Git", "GitHub", "Linux", "VS Code", "Tableau"];
 
   const exploring = [
-    "LangChain",
-    "LangGraph",
-    "Model Context Protocol (MCP)",
-    "Retrieval-Augmented Generation (RAG)",
-    "Agentic AI"
+    "Agentic AI Workflows",
+    "LangGraph Multi-Agent Systems",
+    "Vector Search & Qdrant",
+    "Distributed Systems",
+    "Federated Learning (FedAvg)",
+    "Kubernetes Deployments"
   ];
 
   return (
@@ -251,9 +297,9 @@ export default function SkillsPage() {
       <section className="mx-auto max-w-4xl px-6 py-16">
         <Reveal className="mb-10 text-center">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-blush-dark">
-            Data Science
+            Backend & AI
           </p>
-          <h2 className="font-display text-3xl font-semibold">Artificial Intelligence & Data</h2>
+          <h2 className="font-display text-3xl font-semibold">Backend, Cloud & Applied AI</h2>
         </Reveal>
         <div className="grid gap-6 md:grid-cols-2">
           {aiStack.map((tech) => (

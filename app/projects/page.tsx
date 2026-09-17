@@ -5,7 +5,7 @@ import { projects } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Projects — Yashi Srivastava",
-  description: "Machine learning, deep learning, and systems projects.",
+  description: "Backend architectures, Agentic AI workflows, and scalable systems.",
 };
 
 export default function ProjectsPage() {

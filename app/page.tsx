@@ -60,28 +60,28 @@ export default function HomePage() {
         </Reveal>
         <TimelineItem
           title="Data Science Intern"
-          subtitle="DoIT&C, Government of Rajasthan · via Trigyn Technologies"
-          duration="June 2026 – Present"
+          subtitle="Trigyn Technologies Ltd. — DOITC, Government of Rajasthan · Jaipur, Rajasthan"
+          duration="Jun – Aug 2026"
           icon={<Sparkles size={15} className="text-blush-dark" />}
         >
-          {/* Working on data analytics and business intelligence solutions using Tableau. Building interactive dashboards, analysing public sector datasets, and translating complex operational data into clear visual insights to support informed decision-making. */}
+          {/* Data ingestion and validation pipelines in Python, MySQL star-schema optimization, and automated Tableau dashboards. */}
         </TimelineItem>
         <TimelineItem
-          title="Deep Learning Research Intern"
-          subtitle="NIT Allahabad"
+          title="Research Intern (Deep Learning)"
+          subtitle="MNNIT Allahabad · Supervisor: Dr. Joohi Chauhan · Prayagraj, India"
           duration="Jun – Jul 2025"
           icon={<Sparkles size={15} className="text-blush-dark" />}
         >
-          {/* Trained ANN/CNN models for cardiac risk prediction and image classification, and explored federated learning. */}
+          {/* Benchmarked PyTorch neural networks (86.5% accuracy, 0.89 ROC-AUC), CNN optimization over 60,000 images, and Federated Learning. */}
         </TimelineItem>
         <TimelineItem
           title={education.institution}
-          subtitle={`${education.degree} · ${education.specialisation}`}
+          subtitle={education.degree}
           duration={education.duration}
           icon={<GraduationCap size={15} className="text-lavender-dark" />}
           isLast
         >
-          Coursework spanning {education.coursework.join(", ")}.
+          Relevant coursework: {education.coursework.join(", ")}.
         </TimelineItem>
       </section>
 
