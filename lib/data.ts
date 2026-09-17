@@ -100,8 +100,8 @@ export const projects = [
       "Secured endpoints with JWT authentication, bcrypt hashing & strict SQL parameterization",
       "Packaged backend into Docker containers with Kubernetes manifests & GitHub Actions CI/CD",
     ],
-    github: "https://github.com/yashi-2004",
-    demo: null,
+    github: "https://github.com/yashi-2004/enterprise-ai-platform",
+    demo: "https://enterprise-ai-platform-5zcj-2z5vcpsto.vercel.app/login",
   },
   {
     slug: "responsive-developer-platform",
