@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "View or download my resume.",
 };
 
-const RESUME_PATH = "/resume/Yashi_Srivastava_Resume.pdf";
+const RESUME_PATH = "/resume/Resume Yashi Srivastava.pdf";
 
 export default function ResumePage() {
   return (
